@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  attr_reader :name, :password, :balance
+  validates_presence_of :name, :password, :balance
 end
