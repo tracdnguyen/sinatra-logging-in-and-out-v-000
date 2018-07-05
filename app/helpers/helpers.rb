@@ -4,10 +4,6 @@ class Helpers
   end 
 
   def is_logged_in?(session)
-    if !!current_user
-      return false
-    else 
-      return true
-    end
+    !!session[:user_id]
   end
 end
