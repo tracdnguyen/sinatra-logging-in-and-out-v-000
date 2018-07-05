@@ -4,6 +4,10 @@ class Helpers
   end 
 
   def is_logged_in?(session)
-    !!current_user
+    if !!current_user
+      return true
+    else 
+      return false
+    end
   end
 end
