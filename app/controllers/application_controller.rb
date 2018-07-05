@@ -16,7 +16,7 @@ class ApplicationController < Sinatra::Base
     session[:user_id] = @user.id
 
     if @user
-      session[:id] = @user.id
+      session[:user_id] = @user.id
       redirect to '/account'
     end
     redirect '/views/error'
